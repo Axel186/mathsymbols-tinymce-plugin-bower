@@ -1,54 +1,45 @@
-#
+# MathSymbols-TinyMCE-Plugin for Bower
 
-With this plugin you able to add Math Symbols into your content. It supports Math font, but you also have to add [MathJax](https://www.mathjax.org) on the website itself.
 This plugin using [MathJax](https://www.mathjax.org) libary for rendering math font.
 
 This plugin compatible with TinyMce 4.
 
-![MathSymbols TinyMCE Plugin - Visual demo](demo.gif)
-
 Is better to check this project before use: http://www.imathas.com/editordemo/demo.html.
 
-## How to test it:
+![MathSymbols TinyMCE Plugin - Visual demo](https://raw.githubusercontent.com/Axel186/mathsymbols-tinymce-plugin/master/demo.gif)
 
+## Install
+
+### NPM:
 ```
-git clone https://github.com/Axel186/MathSymbols-TinyMCE-Plugin.git
-cd MathSymbols-TinyMCE-Plugin
-npm install
-npm start
-```
-
-Now go to `http://localhost:8080`.
-
-## How to build the dist files:
-
-```
-npm run build
+npm install mathsymbols-tinymce-plugin --save
 ```
 
-Now you have your own `dist` folder - minimized version of plugin already there.
-
-### Configure your TinyMce:
-
-```Javascript
-tinymce.init({
-  selector: 'textarea',
-  external_plugins: {'mathSymbols': 'http://your-website/.../mathsymbols-tinymce-plugin/plugin.js'}, // Add plugin to Tinymce
-  plugins: 'mathSymbols',
-  toolbar: 'mathSymbols',
-});
+### Bower:
+```
+bower install mathsymbols-tinymce-plugin --save
 ```
 
-## The development server
+### Download
 
-By running the `npm start` command you start the development server and open a browser window with an instance of TinyMCE with your plugin added to it. This window will reload automatically whenever a change is detected in the `index.html` file in the `static` folder or in one of the JavaScript files in the `src` directory.
+* [Latest build](https://github.com/Axel186/mathsymbols-tinymce-plugin-bower/archive/master.zip)
 
-## The production build
+## Usage
 
-By running the `npm run build` command Webpack will create a `dist` directory with a child directory with the name of your plugin (mathsymbols-tinymce-plugin) containing three files:
+Configure your TinyMce init settings by adding `external_plugins` and usage of `mathSymbols`: 
 
-* `plugin.js` - the bundled plugin
-* `plugin.min.js` - the bundles, uglified and minified plugin
-* `LICENSE` - a file explaining the license of your plugin (copied over from `src/LICENSE`)
+```
+  tinymce.init({
+    selector: 'textarea',
+    external_plugins: {'mathSymbols': '/your-path-to-plugin/mathsymbols-tinymce-plugin/plugin.min.js'}, // Add plugin to Tinymce
+    toolbar: 'mathSymbols'
+  });
+```
+
+With this plugin you able to add Math Symbols into your content, but you also have to add [MathJax](https://www.mathjax.org) to the website itself.
+
+## Development
+
+This repository contains only `dist` files, if you want to get the source, check: [mathsymbols-tinymce-plugin](https://github.com/Axel186/mathsymbols-tinymce-plugin).
 
 ## License - MIT
