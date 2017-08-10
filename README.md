@@ -4,9 +4,9 @@ This plugin using [MathJax](https://www.mathjax.org) libary for rendering math f
 
 This plugin compatible with TinyMce 4.
 
-Is better to check this project before use: http://www.imathas.com/editordemo/demo.html.
-
 ![MathSymbols TinyMCE Plugin - Visual demo](https://raw.githubusercontent.com/Axel186/mathsymbols-tinymce-plugin/master/demo.gif)
+
+*Is better to check this project before use: http://www.imathas.com/editordemo/demo.html.*
 
 ## Install
 
